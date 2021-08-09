@@ -1,0 +1,15 @@
+.card__image img {
+  width: 100%;
+  display: block; 
+}
+
+.poster_min {
+  height: 20px;
+  max-width: 20px;
+  width: 100%;
+}
+
+.card__rating-img {
+  width: 18px;
+  height: 18px;
+}

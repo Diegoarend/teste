@@ -1,0 +1,135 @@
+/*=============== 
+CARDS
+==================*/
+.cards {
+  width: 90%;
+  max-width: 1000px;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+  grid-gap: 40px;
+  padding-top:40px
+}
+
+.text--medium {
+  font-size: 1.9rem;
+  line-height: 2rem;
+  font-weight: 900;
+  color: #343434;
+}
+
+.cards__card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  max-width: 289px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow:0 2px 4px rgb(0 0 0 / 50%);
+}
+
+.cards__card:hover {
+  transform: translateY(-7px);
+}
+
+.card__image {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #343434;
+  background:#343434 ;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+.card__image img {
+  width: 100%;
+  display: block; 
+}
+
+.card__content {
+  border: 1px solid rgba(52, 52, 52,0.7);
+  border-top: unset;
+  border-bottom: unset;
+  width: 100%;
+  
+}
+
+.card__title {
+  text-align: center;
+  width: 180px;
+  margin:10px auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__info {
+  display: flex;
+  align-self: end;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__rating-img {
+  width: 18px;
+  height: 18px;
+}
+
+.card__grade {
+  padding: 0 15px 0 5px;
+}
+
+.card__gender {
+  font-size: 1.1rem;
+}
+
+.card__price {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 15px;
+}
+
+.card__add-car {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  border: none;
+  background:rgb(113, 89, 193); 
+  font-size: 1em;
+  padding:10px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -30px;
+  box-shadow:0 2px 4px rgb(0 0 0 / 80%);
+  cursor: pointer;
+}
+
+.card__add-car:hover {
+  transform: scale(1.05);
+}
+
+
+
+.card__image img {
+  width: 100%;
+  display: block; 
+  min-height: 330px;
+}
+
+.poster_min {
+  height: 20px;
+  max-width: 20px;
+  width: 100%;
+}
+
+.card__rating-img {
+  width: 18px;
+  height: 18px;
+}

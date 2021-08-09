@@ -1,0 +1,26 @@
+{"results": [
+  {
+  "id": 1,
+  "name": "Rick Sanchez",
+  "status": "Alive",
+  "species": "Human",
+  "type": "",
+  "grade":"9",
+  "price":"91",
+  "gender": "Male",
+  "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Rick Sanchez",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "price":"22",
+    "grade":"10",
+    "gender": "Male",
+    "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+    }
+
+]
+}

@@ -1,0 +1,6 @@
+.side__bar__content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  height: calc(100vh - 280px);
+}
