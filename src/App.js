@@ -4,9 +4,9 @@ import {Routes} from './routes/routes'
 export const App = () => {
   return(
     <div className="App"> 
-    <CartProvider>
-      <Routes/>
-    </CartProvider>
+      <CartProvider>
+        <Routes/>
+      </CartProvider>
     </div>
   )
 }

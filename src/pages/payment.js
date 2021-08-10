@@ -1,15 +1,11 @@
 import React from 'react';
 
-
 import {Header} from "../components/organism/Header"
 
 import { useCart} from '../components/CartContext';
 
-
 export const Payment=() => {
  
-
-
   const cart=useCart()
   
   const remove= (id) => () => {
@@ -43,7 +39,6 @@ export const Payment=() => {
           </>
           )
         })
-
         }
         </div>
         <div className="sider__bar__total">

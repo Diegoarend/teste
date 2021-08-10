@@ -15,8 +15,6 @@
   transform: scale(1.1);
 }
 
-
-
 .card__add-car {
   margin: 0 auto;
   display: block;
@@ -46,4 +44,23 @@
   background-size: contain;
   border: none;
   cursor: pointer;
+}
+
+.favorites {
+  width: 28px;
+  height: 28px;
+  background: url(../../../images/favorite.svg) center no-repeat;
+  background-size:contain;
+  border: none;
+  margin-right: 40px;
+  margin-top: 3px;
+}
+
+.cart {
+  width: 38px;
+  height: 38px;
+  background: url(../../../images/cart.svg) center no-repeat;
+  background-size: contain;
+  border: none;
+  position: relative;
 }

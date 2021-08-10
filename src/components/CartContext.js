@@ -33,11 +33,7 @@ export const CartProvider= ({children}) => {
      
       Object.keys(old).forEach(id => {
         if((id !== (movieId).toString())) {
-          console.log(typeof(id))
-          console.log(typeof(movieId))
           newCart[id]=old[id]
-          console.log("ok")
-          
         }  if(old[id].quantity >= 2){
           newCart[id]=old[id]
           newCart[id].quantity-=1

@@ -8,7 +8,8 @@ import {HeaderContainer} from "../../molecules/HeaderContainer"
 
 
 
-export const Header = (props) => { 
+export const Header = ({onSearch,...props}) => { 
+
   const cart = useCart()
   const itemsCount= Object.keys(cart.cart).reduce((prev,curr) => {
     return prev + cart.cart[curr].quantity
@@ -16,8 +17,8 @@ export const Header = (props) => {
  
   return ( 
     <header>
-      <div className="blank-container">{itemsCount}</div>
-      <HeaderContainer text={itemsCount > 0 && <span>{itemsCount}</span>}/>
+      <div className="blank-container"></div>
+      <HeaderContainer onSearch={onSearch} children={itemsCount > 0 && <span id="span__counter" className="header__counter">{itemsCount}</span>}/>
     </header>
   )
 }
