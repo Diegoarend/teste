@@ -2,19 +2,19 @@ import * as React from "react";
 import './style.css'
 
 import {Input} from "../../Atom/Input"
-import {Button} from "../../Atom/Button"
+import {Anchor} from "../../Atom/Anchor"
 
 
 
-export const HeaderContainer = ({className,children}) => (
-    <div class="header__container">
-      <div class="logo">
+export const HeaderContainer = ({className,...props}) => (
+    <div className="header__container">
+      <div className="logo">
           <h2>LOGO</h2>
       </div>
       <Input className="search-input" />
-      <div class="header-buttons">
-        <Button className="favorites" />
-        <Button className="cart"/>
+      <div className="header-buttons">
+        <Anchor className="favorites" />
+        <Anchor className="cart" text={props.text} ></Anchor>
       </div>
     </div>
 )

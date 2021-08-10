@@ -10,8 +10,8 @@ import star from "../../../images/star.svg"
 
 
 export const Card___ = () => (
-    <div class="cards__card">
-      <div class="card__image">
+    <div className="cards__card">
+      <div className="card__image">
         <img src={poster} />
         <Button className="card__add-to-favorite"/>
       </div>

@@ -5,7 +5,7 @@ import {Button} from '../../Atom/Button'
 export function CardImage(props) {
   return <div className="card__image">
           <img src={props.image} alt={props.alt}/>
-          <Button className="card__add-to-favorite"/>
+          <Button onClick={props.onClick} className="card__add-to-favorite"/>
         </div>
 }
 

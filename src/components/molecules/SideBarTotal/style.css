@@ -1,6 +1,7 @@
 .side__bar {
   background: #fff;
-  display: none;
+  display: block;
+  opacity: 1;
   height: calc(100vh - 116px);
   right:0;
   top: 115px;

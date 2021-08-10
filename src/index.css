@@ -12,3 +12,79 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.side__bar {
+  background: #fff;
+  display: block;
+  height: calc(100vh - 116px);
+  right:0;
+  top: 86px;
+  overflow: hidden;
+  padding: 20px 15px;
+  position: fixed;
+  width: 318px;
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+  z-index: 500;
+  border: 2px solid gray;
+}
+
+.side__bar__header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.side__bar__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.side__bar__content {
+  padding-bottom: 20px;
+  height: calc(100vh - 350px);
+}
+
+.side__bar__item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.sider__bar__total {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.poster_min {
+  height: 20px;
+  max-width: 20px;
+  width: 100%;
+}
+
+.trash_can {
+  height: 10px;
+  max-width: 10px;
+  width: 100%;
+  background:url(images/trash-can.svg) center no-repeat;
+  background-size: contain;
+}
+
+.side__bar__finish {
+  width: 80%;
+  padding: 10px 20px;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  background:rgb(113, 89, 193); 
+  font-size: 1em;
+  padding:10px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: unset;
+}
