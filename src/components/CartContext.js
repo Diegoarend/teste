@@ -39,12 +39,8 @@ export const CartProvider = ({ children }) => {
         if (old[id].quantity >= 2) {
           newCart[id] = old[id];
           newCart[id].quantity -= 1;
-          console.log(old[id].quantity);
-          console.log(newCart[id].quantity);
-          console.log("mais de 1");
         }
       });
-      console.log(newCart);
       window.localStorage.setItem("cart", JSON.stringify(newCart));
       return newCart;
     });

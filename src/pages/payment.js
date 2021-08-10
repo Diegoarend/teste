@@ -27,7 +27,6 @@ export const Payment = () => {
           </div>
           <div className="side__bar__content">
             {Object.keys(cart.cart).map((key) => {
-              console.log(cart.cart[key]);
               return (
                 <>
                   <div className="side__bar__item">

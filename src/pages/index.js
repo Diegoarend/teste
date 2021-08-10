@@ -28,7 +28,6 @@ export const Home = () => {
 
   const onSearch = (e) => {
     setSearch(e.target.value);
-    console.log(e);
   };
 
   useEffect(() => {
@@ -53,7 +52,6 @@ export const Home = () => {
   }, []);
 
   useEffect(() => {
-    console.log("chegou search effect", search);
     setfilteredMovies(
       state.filter((movie) => {
         return movie.original_title
