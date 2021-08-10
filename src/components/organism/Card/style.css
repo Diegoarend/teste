@@ -4,11 +4,11 @@ CARDS
 .cards {
   width: 90%;
   max-width: 1000px;
-  margin:0 auto;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
   grid-gap: 40px;
-  padding-top:40px
+  padding-top: 40px;
 }
 
 .text--medium {
@@ -27,7 +27,7 @@ CARDS
   transition: all 0.3s ease 0s;
   position: relative;
   margin-bottom: 30px;
-  box-shadow:0 2px 4px rgb(0 0 0 / 50%);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
 }
 
 .cards__card:hover {
@@ -39,23 +39,21 @@ CARDS
   position: relative;
   overflow: hidden;
   border: 1px solid #343434;
-  background:#343434 ;
+  background: #343434;
   margin: 0;
   padding: 0;
-
-
 }
 
 .card__image img {
   width: 100%;
-  display: block; 
+  display: block;
 }
 
 .card__content {
-  border: 1px solid rgba(52, 52, 52,0.7);
+  border: 1px solid rgba(52, 52, 52, 0.7);
   border-top: unset;
   border-bottom: unset;
-  width: 100%; 
+  width: 100%;
 }
 
 .card__release__date {
@@ -64,20 +62,17 @@ CARDS
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  color: #fff ;
+  color: #fff;
   width: 100%;
-  text-shadow:
-  -1px -1px 0 #000,  
-   1px -1px 0 #000,
-   -1px 1px 0 #000,
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
-    background: transparent;
+  background: transparent;
 }
 
 .card__title {
   text-align: center;
   width: 180px;
-  margin:10px auto;
+  margin: 10px auto;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -116,7 +111,6 @@ CARDS
 .card__price {
   text-align: center;
   font-size: 1.6rem;
-  
 }
 
 .card__add-car {
@@ -124,15 +118,15 @@ CARDS
   display: block;
   width: 100%;
   border: none;
-  background:rgb(113, 89, 193); 
+  background: rgb(113, 89, 193);
   font-size: 1em;
-  padding:10px;
+  padding: 10px;
   color: #fff;
   font-weight: 600;
   border-radius: 5px;
   position: absolute;
   bottom: -30px;
-  box-shadow:0 2px 4px rgb(0 0 0 / 80%);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 80%);
   cursor: pointer;
 }
 
@@ -140,11 +134,9 @@ CARDS
   transform: scale(1.05);
 }
 
-
-
 .card__image img {
   width: 100%;
-  display: block; 
+  display: block;
   min-height: 330px;
 }
 

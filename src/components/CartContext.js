@@ -1,68 +1,72 @@
-import {createContext, useContext, useEffect, useState} from 'react';
+import { createContext, useContext, useEffect, useState } from "react";
 
-export const CartContext= createContext();
+export const CartContext = createContext();
 
-export const CartProvider= ({children}) => {
-  const [cart,setCart]=useState({})
+export const CartProvider = ({ children }) => {
+  const [cart, setCart] = useState({});
   useEffect(() => {
-    const cartLocal= window.localStorage.getItem('cart')
-    if(cartLocal){
-      setCart(JSON.parse(cartLocal))
+    const cartLocal = window.localStorage.getItem("cart");
+    if (cartLocal) {
+      setCart(JSON.parse(cartLocal));
     }
-  },[])
-  const addToCart= movie => {
+  }, []);
+  const addToCart = (movie) => {
     setCart((old) => {
-      let quantity=0
-      if(old[movie.id]){
-        quantity=old[movie.id].quantity
+      let quantity = 0;
+      if (old[movie.id]) {
+        quantity = old[movie.id].quantity;
       }
-      const newCart= {...old,
-      [movie.id]:{
-        quantity:quantity+1,     
-        movie
-      }
-    }
-    window.localStorage.setItem('cart',JSON.stringify(newCart))
-    return newCart
-    })
-  }
+      const newCart = {
+        ...old,
+        [movie.id]: {
+          quantity: quantity + 1,
+          movie,
+        },
+      };
+      window.localStorage.setItem("cart", JSON.stringify(newCart));
+      return newCart;
+    });
+  };
 
-  const removeFromCart= (movieId) => {
-    setCart(old => {
-      const newCart={}
-     
-      Object.keys(old).forEach(id => {
-        if((id !== (movieId).toString())) {
-          newCart[id]=old[id]
-        }  if(old[id].quantity >= 2){
-          newCart[id]=old[id]
-          newCart[id].quantity-=1
-          console.log(old[id].quantity)
-          console.log(newCart[id].quantity)
-          console.log("mais de 1")
+  const removeFromCart = (movieId) => {
+    setCart((old) => {
+      const newCart = {};
+
+      Object.keys(old).forEach((id) => {
+        if (id !== movieId.toString()) {
+          newCart[id] = old[id];
         }
-      })
-      console.log(newCart)
-      window.localStorage.setItem('cart',JSON.stringify(newCart))
-      return newCart
-    })
-  }
+        if (old[id].quantity >= 2) {
+          newCart[id] = old[id];
+          newCart[id].quantity -= 1;
+          console.log(old[id].quantity);
+          console.log(newCart[id].quantity);
+          console.log("mais de 1");
+        }
+      });
+      console.log(newCart);
+      window.localStorage.setItem("cart", JSON.stringify(newCart));
+      return newCart;
+    });
+  };
 
-  const EmptyCart= () => {
+  const EmptyCart = () => {
     setCart(() => {
-      const newCart={}
-      window.localStorage.setItem('cart',JSON.stringify(newCart))
-      return newCart
-    })
-  }
+      const newCart = {};
+      window.localStorage.setItem("cart", JSON.stringify(newCart));
+      return newCart;
+    });
+  };
   return (
-    <CartContext.Provider value={{cart, addToCart, removeFromCart,EmptyCart}}>
+    <CartContext.Provider
+      value={{ cart, addToCart, removeFromCart, EmptyCart }}
+    >
       {children}
     </CartContext.Provider>
-  )
-}
+  );
+};
 
-export const useCart= () => {
-  const cart = useContext(CartContext)
-  return cart
-}
+export const useCart = () => {
+  const cart = useContext(CartContext);
+  return cart;
+};

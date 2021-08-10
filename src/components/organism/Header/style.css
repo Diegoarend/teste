@@ -5,12 +5,12 @@
   display: block;
 }
 header {
-    position: fixed;
-    top: 0;
-    height: 116px;
-    width: 100vw;
-    z-index: 900;
-  }
+  position: fixed;
+  top: 0;
+  height: 116px;
+  width: 100vw;
+  z-index: 900;
+}
 .header__counter {
   height: 20px;
   display: flex;
@@ -32,7 +32,6 @@ header {
   top: 0;
   right: 10px;
   transform: scale(1.2) translate(50%, -50%);
-   
 }
 
 .bounce {
@@ -45,7 +44,7 @@ header {
     transform: scale(1.2) translate(50%, -50%);
   }
   to {
-    transform:scale(1.2) translate(50%, -90%);
+    transform: scale(1.2) translate(50%, -90%);
   }
 }
 @-webkit-keyframes bounce {

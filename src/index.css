@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  font-family:'Roboto';
+  font-family: "Roboto";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.6rem;
@@ -17,15 +17,14 @@ main {
 }
 
 code {
-  font-family:'Roboto';
+  font-family: "Roboto";
 }
-
 
 .side__bar {
   background: #fff;
   display: block;
   height: calc(100vh - 116px);
-  right:0;
+  right: 0;
   top: 86px;
   overflow: hidden;
   padding: 20px 15px;
@@ -33,12 +32,11 @@ code {
   width: 318px;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
-  transition:all 0.3s linear;
+  transition: all 0.3s linear;
   z-index: 500;
   border: 2px solid gray;
   transform: translate(100%);
 }
-
 
 .show-sidebar {
   transform: translate(0);
@@ -68,14 +66,12 @@ code {
   padding-bottom: 20px;
 }
 
-.side__bar__movie__title{
-    text-align: center;
-    width: 100px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    
-  
+.side__bar__movie__title {
+  text-align: center;
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .sider__bar__total {
@@ -94,7 +90,7 @@ code {
   height: 20px;
   max-width: 20px;
   width: 100%;
-  background:url(images/trash-can.svg) center no-repeat;
+  background: url(images/trash-can.svg) center no-repeat;
   background-size: contain;
 }
 
@@ -104,9 +100,9 @@ code {
   margin: 0 auto;
   display: block;
   border: none;
-  background:rgb(113, 89, 193); 
+  background: rgb(113, 89, 193);
   font-size: 1em;
-  padding:10px;
+  padding: 10px;
   color: #fff;
   font-weight: 600;
   border-radius: 5px;
@@ -123,20 +119,18 @@ code {
   border: none;
   color: rgb(113, 89, 193);
   font-size: 1.6rem;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   background: transparent;
   font-weight: 600;
-} 
-
+}
 
 @media (max-width: 715px) {
   header {
     height: 86px;
   }
   .logo {
-  margin-left: 10px;
+    margin-left: 10px;
   }
-  
 
   .cards__card {
     margin: 0 auto 20px auto;
@@ -146,10 +140,10 @@ code {
   .side__bar {
     background: #fff;
     padding: 20px 15px;
-    width: 100%; 
+    width: 100%;
     max-width: 300px;
-    height:calc(100vh - 86px);
-    top:86px;
+    height: calc(100vh - 86px);
+    top: 86px;
   }
 
   .favorites {
@@ -165,8 +159,4 @@ code {
     padding-right: 10px;
     padding-left: 05px;
   }
-
-
 }
-
-
